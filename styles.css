@@ -38,6 +38,7 @@ main{
 .image{
     background: url(images/illustration-hero.svg);
     background-size: contain;
+    /* background-size: cover; */
     height: 160px;
 }
 /* -------------------------SUMMARY--------------------------- */
@@ -47,6 +48,8 @@ h1{
     color: var(--Dark_blue);
     /* margin: 38px auto 24px; */
     margin: 38px auto 14px;
+    /* reduzco de 24px a 14px para contrarrestar el espacio generado por
+    el line-height de .summary p */
 }
 .summary p{
     font-size: 15px;
@@ -77,6 +80,7 @@ h1{
     height: 48px;
     width: 48px;
     background: url(images/icon-music.svg);
+    background-repeat: no-repeat;
 }
 .plan{
     height: 48px;
@@ -96,6 +100,9 @@ h1{
 .payment a{
     font-weight: 700;
     font-size: 15px;
+    color: var(--Bright_blue);
+    /* margin-left: 30px; */
+    /* Él lo pone pq ha dado un valor diferente a justify-content */
 }
 .payment a:hover{
     cursor: pointer;
@@ -114,6 +121,7 @@ button:first-of-type{
     font-size: 16px;
     font-weight: 700;
     box-shadow: var(--Desaturated_blue) 0 10px 30px ;
+    /* box-shadow: var(--Pale_blue) 0 10px 8px 3px ; */
 }
 button:first-of-type:hover{
     cursor: pointer;
